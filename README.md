@@ -11,7 +11,7 @@
 
 2. Todos os modelos possuem em suas pastas um arquivo com dados em formato csv
 
-3. Todos os modelos possuem um arquivo **READMEcode.md** que explica em detalhes as ações nas linhas de código.
+3. Todas as pastas possuem um arquivo **README.md** que explica em detalhes cada linha de código.
 
 
 
