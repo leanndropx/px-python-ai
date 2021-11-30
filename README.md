@@ -2,10 +2,16 @@
 
 
 
-1. Um arquivo python - **wine-type-classification.py** - com um algorítmo de Machine Learning que utiliza o modelo de Árvore de Decisão para classificar o tipo de vinho em Branco ou Vermelho de acordo com as caracterísitcas fornecidas nos dados armazenados no arquivo csv. 
-2. O arquivo csv **wine_dataset.csv** com os dados que serão usados para análise e criação do modelo
-3. O arquivo **READMEcode.md** que explica as linhas de código.
-4. Este arquivo README.md com instruções e informações do repositório
+1. Uma pasta com 2 modelos supervisionados de algoritmos de classificação
+
+   1. **aprende-tipo-vinho.py**: um algorítmo de Machine Learning que utiliza o modelo de Árvore de Decisão para classificar o tipo de vinho em Branco ou Vermelho de acordo com as caracterísitcas fornecidas nos dados armazenados no arquivo csv. 
+   2. **aprende-tipo-cancer.py**: m algorítmo de Machine Learning que utiliza o modelo de Árvore de Decisão para classificar o tipo de cancer em Benigno ou Maligno de acordo com as caracterísitcas fornecidas nos dados armazenados no arquivo csv. 
+
+   
+
+2. Todos os modelos possuem em suas pastas um arquivo com dados em formato csv
+
+3. Todos os modelos possuem um arquivo **READMEcode.md** que explica em detalhes as ações nas linhas de código.
 
 
 
@@ -44,7 +50,7 @@ Como sugestão, utilize o Google Collab, pois é funcional e prático para visul
 
 2. Copie as linhas de código do algoritmo no notebook. 
 
-3. Acesso o arquivo READMEcode e siga o passo a passo para entender a estrutura do código e todos os detalhes de cada linha. 
+3. Acesso o arquivo READMEcode de cada modelo e siga o passo a passo para entender a estrutura do código e todos os detalhes de cada linha. 
 
 4. Exercite você mesmo, tente refazer e explorar o código por conta própria. 
 
