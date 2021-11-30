@@ -1,4 +1,6 @@
-# em modelos de classificação, é importante entender  a ideia de:
+# Em modelos de classificação, é importante entender  a ideia de:
+
+
 
 
 
@@ -7,7 +9,11 @@
 
 
 
-# as etapas em algoritmos de classificação, normalmente podem ser enquadradas em 8 blocos de ações: 
+
+
+# As etapas em algoritmos de classificação, normalmente podem ser enquadradas em 8 blocos de ações: 
+
+
 
 
 
@@ -23,7 +29,9 @@
 
 
 
-# comandos úteis por bloco de ação:
+# Comandos úteis por bloco de ação:
+
+
 
 
 
@@ -32,11 +40,11 @@
 |                                                              |                                                              |
 | **Comando**                                                  | **Função**                                                   |
 |                                                              |                                                              |
-| **1 - carregar os dados**                                    |                                                              |
+| **1 - Carregar os dados**                                    |                                                              |
 | pd.read_csv("caminho do arquivo")                            | carrega arquivo csv e transforma em dataframe                |
 | pd.read_excel("caminho do arquivo")                          | carrega arquivo excel e transforma em data frame             |
 |                                                              |                                                              |
-| **2 - verificar / deletar / trabalhar com valores nulos**    |                                                              |
+| **2 - Verificar / deletar / trabalhar com valores nulos**    |                                                              |
 | df.isnull().sum()                                            | mostra quantidade de valores nulos em cada coluna            |
 | df.info()                                                    | mostra quantidade de valores não nulos em cada coluna        |
 | df.dropna()                                                  | deleta todos os dados faltantes do dataframe                 |
@@ -45,32 +53,32 @@
 | df.dropna(axis=1)                                            | deleta as colunas que contem dados faltantes                 |
 | df.update(df["nome da coluna"].fillna(valor)                 | preenche os campos de valores nulos com outro valor          |
 |                                                              |                                                              |
-| **3 - visualizar colunas / econtrar a coluna Label**         |                                                              |
+| **3 - Visualizar colunas / econtrar a coluna Label**         |                                                              |
 | df.columns                                                   | mostra lista com nomes das colunas                           |
 | list(df.columns)                                             | mostra nomes das colunas um embaixo do outro                 |
 | df.rename(columns={'nome': 'novo_nome'})                     | muda nome da coluna para melhor visualizá-las                |
 | df[nome_da_coluna].value_counts()                            | conta frequencia de valores em determinada coluna            |
 |                                                              |                                                              |
-| **4 - deletar colunas desnecessárias**                       |                                                              |
+| **4 - Deletar colunas desnecessárias**                       |                                                              |
 | df.drop("nome",axis=1)                                       | deleta uma coluna pelo nome                                  |
 | df.drop("nome",axis=1,inplace=True)                          | deleta uma coluna pelo nome dentro da variável original      |
 | df.drop(df[[0,32]],axis=1)                                   | deleta uma coluna pela posição index                         |
 | del df["nome da coluna"]                                     | deleta uma coluna pelo nome                                  |
 |                                                              |                                                              |
-| **5 - substituir string da coluna label por numero**         |                                                              |
+| **5 - Substituir string da coluna label por numero**         |                                                              |
 | df["nome da coluna"].replace("valor",0)                      | substitui um valor por outro                                 |
 |                                                              |                                                              |
-| **6 - dividir em dados de treino e teste**                   |                                                              |
+| **6 - Dividir em dados de treino e teste**                   |                                                              |
 | x_train , x_test , y_train , y_test = train_test_split (x, y , test_size = 0.3) | função divide dados em 4 variáveis de treino e teste         |
 |                                                              |                                                              |
-| **7 - estanciar função de modelo de aprendizagem**           |                                                              |
+| **7 - Estanciar função de modelo de aprendizagem**           |                                                              |
 | model = ExtraTreesClassifier (n_estimators=100)              | estancia modelo de árvore de decisão                         |
 |                                                              |                                                              |
-| **8 - treinar modelo com dados de treino**                   |                                                              |
+| **8 - Treinar modelo com dados de treino**                   |                                                              |
 | model.fit(y_train, x_train)                                  | treina modelo com dados de treino                            |
 |                                                              |                                                              |
-| **9 - testa modelo com dados de teste**                      |                                                              |
+| **9 - Testa modelo com dados de teste**                      |                                                              |
 | result = model.score(y_test , x_test)                        | testa modelo com dados de teste e mostra acuracia            |
 |                                                              |                                                              |
-| **10 - faz a previsão**                                      |                                                              |
+| **10 - Faz a previsão**                                      |                                                              |
 | previsao = model.predict(y_test[100:110])                    | função faz a previsão de dados selecionados do dataframde de teste |
